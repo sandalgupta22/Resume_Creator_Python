@@ -16,7 +16,7 @@ def wrapt(textg,d,width,ipos,jpos,kdif,font1):
 
 
 def draw(m):
-    image = Image.open("D:/Resume Creator App Python/resume_sample.jpeg")
+    image = Image.open("D:/resume_sample.jpeg")
 
     a1 = entry1.get()
     a2 = entry2.get()
@@ -124,7 +124,7 @@ def draw(m):
     if(m==0):
         image.show()
     elif(m==1):
-        image.save("D:/Resume Creator App Python/Files saved/Resume Creator 1.jpeg")
+        image.save("D:/Resume Creator 1.jpeg")
         msg("Image Saved","Thankyou for using Resume Creator. Your Image is Saved")
 
 def msg(str1,str2):
@@ -167,7 +167,7 @@ if __name__ == '__main__':
     a.geometry("1500x770")
     canvas = tkinter.Canvas(a, width = 1500, height = 770)
     canvas.pack()
-    img = ImageTk.PhotoImage(Image.open("D:\Resume Creator App Python\watermarrk.jpg"))
+    img = ImageTk.PhotoImage(Image.open("D:\watermarrk.jpg"))
     canvas.create_image(0, 0, anchor=tkinter.NW, image=img)
     label1 = tkinter.Label(a,text="First Name",bg="teal",padx=30,pady=7)
     label2 = tkinter.Label(a,text="Last Name",bg="teal",padx=30,pady=7)
